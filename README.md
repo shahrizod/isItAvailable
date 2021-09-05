@@ -12,6 +12,6 @@ Since the old API wasn't working, I switched from the Utelly API to the Watchmod
 
 I also tweaked the UI a bit to only show the relevant streaming sources instead of showing check's and x's for each one as well as show the title and poster of the show/movie the program was showing results for. A version of the previous UI can be seen at: https://codepen.io/UlyssessRant/pen/ZgKQEO?editors=0011.
 
-<h3< Future Changes </h3>
+<h3> Future Changes </h3>
 
 Eventually, I'd like to improve the UI a bit because it's a bit simple which leads to poor functionality at times, such as by not allowing users to choose between several similarly named shows/movies, so perhaps I can add a dropdown of possible options for shows/movies as the user types their input. In addition, I would like to add a search algorithm so that the program can correct for minor typos or recognize acronyms, such as "HIMYM" for the show "How I Met Your Mother".
