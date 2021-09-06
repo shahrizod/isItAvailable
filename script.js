@@ -50,7 +50,7 @@ function process(type) {
             var services = [];
             for (var i = 0; i < json.length; i++) {
               if ((json[i].type === "free" || json[i].type === "sub") && json[i].region === "US") {
-                services.push(json[i].source_id);
+                services.push([json[i].source_id, json[i].web_url]);
               }
             }
 
@@ -58,20 +58,25 @@ function process(type) {
 
             let isItAvailable = false;
             for (var i = 0; i < services.length; i++) {
-              if (services[i] == 26 ) {
+              if (services[i][0] == 26 ) {
                 $('.amazon')[0].style.display = "block";
+                $('#amazonLink').attr("href", services[i][1]);
                 isItAvailable = true;
-              } else if (services[i] == 203) {
+              } else if (services[i][0] == 203) {
                 $('.netflix')[0].style.display = "block";
+                $('#netflixLink').attr("href", services[i][1]);
                 isItAvailable = true;
-              } else if (services[i] == 157) {
+              } else if (services[i][0] == 157) {
                 $('.hulu')[0].style.display = "block";
+                $('#huluLink').attr("href", services[i][1]);
                 isItAvailable = true;
-              } else if (services[i] == 387) {
+              } else if (services[i][0] == 387) {
                 $('.hbo')[0].style.display = "block";
+                $('#hboLink').attr("href", services[i][1]);
                 isItAvailable = true;
-              } else if (services[i] == 372) {
+              } else if (services[i][0] == 372) {
                 $('.disney')[0].style.display = "block";
+                $('#disneyLink').attr("href", services[i][1]);
                 isItAvailable = true;
               }
             }
