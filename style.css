@@ -21,8 +21,8 @@ button {
   color: #e66465;
   background-color: #062f4f;
   vertical-align: center;
-  border: 1px solid #b82601;
-  border-radius: 0.25em;
+  border: 1px solid #e66465;
+  border-radius: 0.4em;
 }
 
 button:hover {
