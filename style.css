@@ -1,29 +1,33 @@
 body {
   text-align: center;
-/*   background: #87CEFA; */
-  background: black;
+  /* background: #87CEFA; */
+  background: #0e0b16;
 }
 
 h2 {
-  font-family: Helvetica;
-  color: #FF4500;
+  margin-top: 0.5em;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #e66465;
+}
+
+input {
+  width: 40em;
 }
 
 button {
-  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all .5s ease-in-out;
+  color: #e66465;
+  background-color: #062f4f;
+  vertical-align: center;
+  border: 1px solid #b82601;
   border-radius: 0.25em;
 }
 
-button {
-  font-family: Helvetica;
-  font-weight: bold;
-  border-radius: 0.5em;
-  transition: all .25s ease-in-out;
-  border: none;
-}
-
 button:hover {
-  transform: scale(1.05) perspective(.3em);
+  background: #e7dfdd;
+  color: #e66465;
 }
 
 .services {
