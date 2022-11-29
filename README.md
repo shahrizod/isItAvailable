@@ -10,6 +10,8 @@ This is a project I worked on while participating in my Microsoft experience in 
 
 Since the old API wasn't working, I switched from the Utelly API to the Watchmode API, which not only supports more streaming sources but does so for free with an API request limit. However after further testing I realized that despite having an excellent source for where a certain show or movie is available, the search feature was severely lacking. This resulted in me adding another API, the unofficial IMDB database in order to search for a show or movie on there and then directly provide the corresponding IMDB ID to the Watchmode API, resulting in more accurate results. While testing various inputs, I realized that the API would show inaccurate results because I'd be thinking of a show but it would prioritize a movie instead, leading the program to find the results for a movie with a similar name rather than the show. In order to correct this, I set up different buttons for movies and shows so that the user can choose and get better results.
 
+Update 11/29/2022 : The IMDB database API I was using appears to now be deprecated, so I reprogrammed all the JavaScript to just use the Watchmode API using AJAX calls.
+
 <h3> Visual Issues </h3>
 
 I also tweaked the UI a bit to only show the relevant streaming sources instead of showing check's and x's for each one as well as show the title and poster of the show/movie the program was showing results for. A version of the previous UI can be seen at: https://codepen.io/UlyssessRant/pen/ZgKQEO?editors=0011.
